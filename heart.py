@@ -12,7 +12,7 @@ import sklearn
 
 def main():
     st.title('Heart disease prediction using Random Forest')
-    @st.cache
+    
     filename='rfr_model.pkl'
     loaded_model=joblib.load(filename)
     
