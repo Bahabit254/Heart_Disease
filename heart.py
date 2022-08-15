@@ -38,24 +38,24 @@ def main():
         else:
             FBS_over_120=1
 
-        Age=st.number_input('Age:',min_value=1,max_value=100)
+        Age=st.number_input('Age:',min_value=1.0,max_value=100.0)
 
-        Chest_pain_type=st.slider('Chest_pain_type:',min_value=1,max_value=4)
+        Chest_pain_type=st.slider('Chest_pain_type:',min_value=1.0,max_value=4.0)
 
     with col_2:
-        BP=st.number_input('BloodPressure:',min_value=50,max_value=300)
+        BP=st.number_input('BloodPressure:',min_value=50.0,max_value=300.0)
 
-        Cholesterol=st.number_input('Cholesterol:',min_value=100,max_value=700)
+        Cholesterol=st.number_input('Cholesterol:',min_value=100.0,max_value=700.0)
 
-        Max_HR=st.number_input('Maximum_HeartRate:',min_value=50,max_value=300)
+        Max_HR=st.number_input('Maximum_HeartRate:',min_value=50.0,max_value=300.0)
 
-        ST_depression=st.number_input('ST_depression:',min_value=0.00,max_value=10.00)
+        ST_depression=st.number_input('ST_depression:',min_value=1.0,max_value=10.0)
 
-        ST_slope=st.number_input('ST_slope:',min_value=0,max_value=10)
+        ST_slope=st.number_input('ST_slope:',min_value=0.0,max_value=10.0)
 
-        vessels_fluro=st.number_input('vessels_fluro:',min_value=0,max_value=5)
+        vessels_fluro=st.number_input('vessels_fluro:',min_value=0.0,max_value=5.0)
 
-        Thallium=st.number_input('Thallium:',min_value=0,max_value=10)
+        Thallium=st.number_input('Thallium:',min_value=0.0,max_value=10.0)
 
 
     input_dict={'Sex':'Sex','Exercise_angina':'Exercise_angina','FBS_over_120':'FBS_over_120','Age':'Age','Chest_pain_type':'Chest_pain_type','BP':'BloodPressure','Cholesterol':'Cholesterol','Max_HR':'Maximum_HeartRate','ST_depression':'ST_depression','ST_slope':'ST_slope','vessels_fluro':'vessels_fluro','Thallium':'Thallium'}
