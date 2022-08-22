@@ -13,7 +13,7 @@ import sklearn
 def main():
     st.title('Heart disease prediction using Random Forest')
     
-    filename='rfr_model.pkl'
+    filename='rfr_mdl.pkl'
     loaded_model=joblib.load(filename)
     
     
@@ -58,7 +58,7 @@ def main():
         Thallium=st.number_input('Thallium:',min_value=0.0,max_value=10.0)
 
 
-    input_dict={'Sex':'Sex','Exercise_angina':'Exercise_angina','FBS_over_120':'FBS_over_120','Age':'Age','Chest_pain_type':'Chest_pain_type','BP':'BloodPressure','Cholesterol':'Cholesterol','Max_HR':'Maximum_HeartRate','ST_depression':'ST_depression','ST_slope':'ST_slope','vessels_fluro':'vessels_fluro','Thallium':'Thallium'}
+    input_dict={'Sex':'Sex','Exercise_angina':'Exercise_angina','FBS_over_120':'FBS_over_120','Age':'Age','Chest_pain_type':'Chest_pain_type','BP':'BP','Cholesterol':'Cholesterol','Max_HR':'Max_HR','ST_depression':'ST_depression','ST_slope':'ST_slope','vessels_fluro':'vessels_fluro','Thallium':'Thallium'}
     input_df=pd.DataFrame(input_dict,index=[0])
 
     Button=st.button('Predict')
